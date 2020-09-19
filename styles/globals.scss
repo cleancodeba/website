@@ -17,7 +17,8 @@ a {
 
 $fullhd: 1140px;
 $white-ter: white;
-$navbar-height: 6.25rem;
+//$navbar-height: 6.25rem;
+$navbar-item-img-max-height: 6rem;
 $navbar-item-hover-color: black;
 $navbar-item-active-color: black;
 @import "~bulma";

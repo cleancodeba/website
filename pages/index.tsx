@@ -1,56 +1,57 @@
-import Head from 'next/head'
-import {Test} from "../components/Test";
-import Link from "next/link";
+import * as React from 'react';
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>Clean Code BA</title>
-      </Head>
-      <nav className="navbar is-fixed-top container has-shadow is-transparent" role="navigation" aria-label="main navigation">
-        <div className="navbar-brand">
-          <Link href="/">
-            <a className="pt-2"><img src="/logo@2x.png" height="90" width="90" /></a>
-          </Link>
+    <>
+    <Head>
+      <title>Clean Code BA</title>
+    </Head>
+
+  <div className="columns is-vcentered">
+    <div className="column is-6">
+      <h1 className="title is-title is-size-1 has-text-weight-bold">Eventos</h1>
+      <p className="subtitle is-4 has-margin-top-20 is-family-primary">
+        Armamos eventos informales de programación en el que realizamos charlas especificas o katas aplicando TDD.
+      </p>
+        <div className="field has-addons has-margin-top-30">
+          <div className="control">
+            <button className="button is-danger is-medium">
+              Ver en Meetup.com!
+            </button>
+          </div>
         </div>
-        <div className="navbar-menu">
-          <Link href="/meetup">
-            <a className="navbar-item">
-              Meetup
-            </a>
-          </Link>
-          <Link href="/katas">
-            <a className="navbar-item">
-              Katas
-            </a>
-          </Link>
-          <Link href="/jobs">
-            <a className="navbar-item">
-              Clean Jobs
-            </a>
-          </Link>
-        </div>
-      </nav>
-      <section className="container has-navbar-fixed-top">
-        <h1>Hola</h1>
-        <h1>Hola</h1>
-        <h1>Hola</h1>
-        <h1>Hola</h1>
-        <h1>Hola</h1>
-        <h1>Hola</h1>
-        <h1>Hola</h1>
-        <h1>Hola</h1>
-      </section>
-      <footer className="footer">
-        <div className="content has-text-centered">
-          <p>
-            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-          </p>
-        </div>
-      </footer>
     </div>
-  )
+    <div className="column is-6 has-text-centered is-hidden-mobile">
+      <figure className="image">
+        <img src="/meetup.jpg" alt="Meetup" />
+      </figure>
+    </div>
+  </div>
+
+  <div className="columns is-vcentered mt-6">
+    <div className="column is-6 has-text-centered mr-6 is-hidden-mobile">
+      <figure className="image">
+        <img src="/slack.jpg" alt="Slack" />
+      </figure>
+    </div>
+
+    <div className="column is-6">
+      <h1 className="title is-title is-size-1 has-text-weight-bold">Slack</h1>
+      <p className="subtitle is-4 has-margin-top-20 is-family-primary">
+        Canal para hablar de lo que quieras!
+      </p>
+      <div className="field has-addons has-margin-top-30">
+        <div className="control">
+          <button className="button is-warning is-medium">
+            Entrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </>
+
+);
 }
