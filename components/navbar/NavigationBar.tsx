@@ -1,7 +1,12 @@
 import React, {useState} from 'react'
 import Link from "next/link";
 
-export default function Navbar() {
+export interface NavigationBarProps {
+
+}
+
+
+export default function NavigationBar(props: NavigationBarProps) {
   const [isActive, setIsActive] = useState(false);
 
   const closeDropdown = () => {
