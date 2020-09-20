@@ -2,11 +2,15 @@ import React, {useState} from 'react'
 import Link from "next/link";
 
 export interface NavigationBarProps {
-
+  fixed?: boolean
 }
 
 
-export default function NavigationBar(props: NavigationBarProps) {
+function getFixedClass(fixed: boolean) {
+  return fixed ? "is-fixed-top" : "";
+}
+
+export default function NavigationBar({fixed = true}: NavigationBarProps) {
   const [isActive, setIsActive] = useState(false);
 
   const closeDropdown = () => {
@@ -15,7 +19,7 @@ export default function NavigationBar(props: NavigationBarProps) {
   };
 
   return (
-    <nav className="navbar is-fixed-top container is-transparent" role="navigation" aria-label="main navigation">
+    <nav className={"navbar "+getFixedClass(fixed)+" container is-transparent"} role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <Link href="/">
           <a className="navbar-item">
