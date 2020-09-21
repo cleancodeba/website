@@ -12,8 +12,7 @@ export default function Home() {
     <InformationSection title={"Clean Jobs"}
                         image={"/cleanjobs_opti.jpg"}
                         buttonTitle={"Ver las ofertas! 🤩"}
-                        description={"Ofertas de trabajo <b>curadas</b> según de la <b>metodolgía de trabajo y el feedback de los Clean Cloders</b> te mostramos los lugares donde el clean code y las buenas practicas son <b>indispensables</b>. </p>" +
-                        "<p class='is-size-5 mt-3'>Podes encontrar las mejores propuestas <span class=\"tag is-success\">JUNIOR FRIENDLY</span></p>"}
+                        description={"Ofertas de trabajo <b>curadas</b> según de la <b>metodolgía de trabajo y el feedback de los Clean Cloders</b> te mostramos los lugares donde el clean code y las buenas practicas son <b>indispensables</b>.  <p class='is-size-5 mt-3'>Podes encontrar las mejores propuestas <span class=\"tag is-success\">JUNIOR FRIENDLY</span></p>"}
                         link={"/jobs"}
     />
 
@@ -31,6 +30,5 @@ export default function Home() {
                         link={"http://bitly.com/ccbaslack"}
                         />
     </>
-
 );
 }

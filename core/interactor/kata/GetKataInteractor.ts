@@ -4,7 +4,6 @@ import {IKataRepository} from "../../adapter/repository/IKataRepository";
 export class GetKataInteractor {
   private kataRepository: IKataRepository;
 
-
   constructor(kataRepository: IKataRepository) {
     this.kataRepository = kataRepository;
   }

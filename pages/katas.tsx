@@ -41,22 +41,22 @@ export default function Katas({
         </ul>
       </div>
 
-      {/*<div className="columns is-multiline is-mobile">*/}
-      {/*  {katas.map((value, index) => (*/}
-      {/*    <div key={index} className="column is-half">*/}
-      {/*      <KataItem kata={value} />*/}
-      {/*    </div>*/}
-      {/*  ))}*/}
-      {/*</div>*/}
+      <div className="columns is-multiline is-mobile">
+        {katas.map((value, index) => (
+          <div key={index} className="column is-half">
+            <KataItem kata={value} />
+          </div>
+        ))}
+      </div>
     </>
   );
 }
 
-// export const getStaticProps: GetStaticProps = async () => {
-//   const katas = await Configuration.getKataInteractor().getAll();
-//   return {
-//     props: {
-//       katas
-//     }
-//   }
-// }
+export const getStaticProps: GetStaticProps = async () => {
+  const katas = await Configuration.getKataInteractor().getAll();
+  return {
+    props: {
+      katas
+    }
+  }
+}
