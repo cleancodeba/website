@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 import Link from "next/link";
+import ActiveLink from "../utils/ActiveLink";
 
 export interface NavigationBarProps {
   fixed?: boolean
 }
-
 
 function getFixedClass(fixed: boolean) {
   return fixed ? "is-fixed-top" : "";
@@ -40,21 +40,21 @@ export default function NavigationBar({fixed = true}: NavigationBarProps) {
 
       <div className={`navbar-menu ${isActive ? "is-active" : ""}`}>
         <div className="navbar-end">
-          <Link href="/">
+          <ActiveLink href="/" activeClassName={"is-active"}>
             <a className="navbar-item" onClick={closeDropdown}>
               Info
             </a>
-          </Link>
-          <Link href="/katas">
+          </ActiveLink>
+          <ActiveLink href="/katas" activeClassName={"is-active"}>
             <a className="navbar-item" onClick={closeDropdown}>
-              Katas
+              Clean Katas
             </a>
-          </Link>
-          <Link href="/jobs">
+          </ActiveLink>
+          <ActiveLink href="/jobs" activeClassName={"is-active"}>
             <a className="navbar-item" onClick={closeDropdown}>
               Clean Jobs
             </a>
-          </Link>
+          </ActiveLink>
         </div>
       </div>
     </nav>
