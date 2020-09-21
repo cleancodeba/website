@@ -20,8 +20,7 @@ export default function InformationSection({right = false, ...props}: Informatio
     <div className={"columns is-vcentered " + loadDirection(right)}>
       <div className="column is-6 information">
         <h1 className="title is-title is-size-1 has-text-weight-bold">{props.title}</h1>
-        <p className="subtitle is-4 has-margin-top-20 is-family-primary">
-          {props.description}
+        <p className="subtitle is-4 has-margin-top-20 is-family-primary" dangerouslySetInnerHTML={{__html: props.description}}>
         </p>
         <div className="field has-addons has-margin-top-30">
           <div className="control">

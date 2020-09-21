@@ -32,7 +32,7 @@ export default function Katas({
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen/>
         </p>
-        <h6><i>Muy pronto en esta seccion vamos a subir uan recopilacion de las mejores Katas!</i></h6>
+        <h6><i>Muy pronto en esta sección vamos a subir una recopilación de las mejores Katas!</i></h6>
         <h4>Mientras te dejamos unos links:</h4>
         <ul>
           <li><a href={"https://codingdojo.org/kata/"} target={"_blank"}>CodingDojo.org</a></li>
