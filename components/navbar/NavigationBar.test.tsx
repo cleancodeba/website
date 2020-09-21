@@ -1,7 +1,6 @@
 import React from "react";
 import {fireEvent, render} from '@testing-library/react';
 import NavigationBar from "./NavigationBar";
-import {withTestRouter} from "../../utils/TestRouter";
 
 beforeEach(() => {
 });
@@ -66,4 +65,55 @@ function expectCloseMenu(menu: Element, burgerButton: Element) {
 
 function click(element: Element) {
   fireEvent.click(element)
+}
+
+
+import React from "react";
+import { NextRouter } from "next/router";
+import { RouterContext } from "next/dist/next-server/lib/router-context";
+
+export function withTestRouter(
+  tree: React.ReactElement,
+  router: Partial<NextRouter> = {}
+) {
+  window.scrollTo = jest.fn()
+  const {
+    route = "",
+    pathname = "",
+    query = {},
+    asPath = "",
+    push = async () => true,
+    replace = async () => true,
+    reload = () => null,
+    back = () => null,
+    prefetch = async () => undefined,
+    beforePopState = () => null,
+    isFallback = false,
+    events = {
+      on: () => null,
+      off: () => null,
+      emit: () => null
+    }
+  } = router;
+
+  return (
+    <RouterContext.Provider
+      value={{
+        route,
+        pathname,
+        query,
+        asPath,
+        push,
+        replace,
+        reload,
+        back,
+        prefetch,
+        beforePopState,
+        isFallback,
+        events
+      }}
+    >
+      {tree}
+    </RouterContext.Provider>
+  );
 }
