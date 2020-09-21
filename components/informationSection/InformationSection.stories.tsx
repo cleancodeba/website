@@ -1,7 +1,6 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import InformationSection, {InformationSectionProps} from "./InformationSection";
-import MeetupImage from '../../public/meetup.jpg';
 
 export default {
   title: 'Clean Code Web/Sections/InformationSection',
@@ -13,7 +12,7 @@ const Template: Story<InformationSectionProps> = (args) => <InformationSection {
 
 export const Normal = Template.bind({});
 Normal.args = {
-  image: MeetupImage,
+  image: "MeetupImage",
   title: "Events",
   description: "Hacemos eventos buenisimos",
   buttonTitle: "Enter!",
@@ -22,7 +21,7 @@ Normal.args = {
 
 export const Right = Template.bind({});
 Right.args = {
-  image: MeetupImage,
+  image: "MeetupImage",
   title: "Events",
   description: "Hacemos eventos buenisimos",
   buttonTitle: "Enter!",
