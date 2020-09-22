@@ -33,7 +33,7 @@ export default function Jobs() {
                   <article className="media">
                     <div className="media-content">
                       <div className="content">
-                        <img src={"/meetup_opti.jpg"}/>
+                        <img src={"/cleanjobs_opti.jpg"}/>
                       </div>
                     </div>
                   </article>
@@ -44,12 +44,12 @@ export default function Jobs() {
                       <div className="content is-desktop">
                         <ul className="is-size-5">
                           <li>Estamos trabajando para sumar empresas interesadas en publicar de forma <b>gratuita</b> ofertas de trabajo.</li>
-                          <li>Es muy imporante conocer metodoligía de trabajo, lenguajes, stacks, cutlura, etc.</li>
+                          <li>Es muy importante conocer metodoligía de trabajo, lenguajes, stacks, cutlura, etc.</li>
                           <li>Van a ser destacadas las oportunidades para perfiles <b>trainees/juniors</b></li>
                         </ul>
                       </div>
                       <div className={"level-item"}>
-                        <button className="button is-medium is-success mt-4" onClick={openForm} style={{ cursor: 'pointer' }}>
+                        <button className="button is-medium is-success mt-3" onClick={openForm} style={{ cursor: 'pointer' }}>
                           ¡Quiero publicar! 👏
                         </button>
                       </div>
