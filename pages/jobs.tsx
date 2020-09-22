@@ -3,7 +3,11 @@ import { ReactTypeformEmbed } from 'react-typeform-embed';
 import * as typeformEmbed from '@typeform/embed';
 
 export default function Jobs() {
-  const typeform = typeformEmbed.makePopup("https://form.typeform.com/to/OAJqKlIH", {});
+
+  function openForm() {
+    const typeform = typeformEmbed.makePopup("https://form.typeform.com/to/OAJqKlIH", {});
+    typeform.open()
+  }
 
   return (
     <>
@@ -18,7 +22,7 @@ export default function Jobs() {
         {/*  buttonText="Go!"*/}
         {/*  style={{ top: 100 }}*/}
         {/*/>*/}
-        <button className="btn" onClick={() => {typeform.open()}} style={{ cursor: 'pointer' }}>
+        <button className="btn" onClick={openForm} style={{ cursor: 'pointer' }}>
           Click to open the popup!
         </button>
       </div>
