@@ -62,8 +62,7 @@ export default function Jobs() {
         </div>
 
         <div className="content">
-          <p>En esta industria es <b>muy facil equivocarse</b> y tomar propuestas laborales
-            que suman a nuestro crecimiento profesional.</p>
+          <p>En esta industria es <b>muy facil equivocarse</b> y tomar propuestas laborales <b>no</b> que suman a nuestro crecimiento profesional.</p>
 
           <p>Es importante tomar en cuenta lo que un trabajo
             puede darte para mejorar tus conocimientos, mantenerte actualizado
