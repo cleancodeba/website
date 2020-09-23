@@ -12,17 +12,17 @@ export default function Katas({
   return (
     <>
       <div className={"content"}>
-        <h1>¿Que es un code Kata?</h1>
-        <p>Basado en las artes marciales, una Kata es un entrenamiento a conciencia de las habilidades de programación</p>
+        <h1>¿Qué es un Code Kata?</h1>
+        <p>Basado en las artes marciales, una Kata es un entrenamiento a conciencia de las habilidades de programación.</p>
         <p>Fue inicialmente ideado por Dave Thomas (The Pragmatic Programmer) y rápidamente fue incorporado por muchos que entendieron el valor que una sesión de entrenamiento y la disciplina para ejecutarla con regularidad, podría ofrecer en productividad para el día a día.</p>
         <br/>
         <h4>¿Habilidades de programación? 🤔</h4>
         <ul>
           <li>Diseño Simple</li>
           <li>Test Driven Development (TDD)</li>
-          <li>Behaivor Deiven Development (BDD)</li>
-          <li>Programacion Orientada a Objetos</li>
-          <li>Progrmacion Funcional</li>
+          <li>Behavior Driven Development (BDD)</li>
+          <li>Programación Orientada a Objetos</li>
+          <li>Programación Funcional</li>
           <li>entre otras..</li>
         </ul>
         <br/>
@@ -33,7 +33,7 @@ export default function Katas({
           allowFullScreen/>
         </p>
         <h6><i>Muy pronto en esta sección vamos a subir una recopilación de las mejores Katas!</i></h6>
-        <h4>Mientras te dejamos unos links:</h4>
+        <h4>Mientras te dejamos algunos links:</h4>
         <ul>
           <li><a href={"https://codingdojo.org/kata/"} target={"_blank"}>CodingDojo.org</a></li>
           <li><a href={"http://codekata.com/"} target={"_blank"}>CodeKata.com</a></li>

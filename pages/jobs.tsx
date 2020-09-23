@@ -44,7 +44,7 @@ export default function Jobs() {
                       <div className="content is-desktop">
                         <ul className="is-size-5">
                           <li>Estamos trabajando para sumar empresas interesadas en publicar de forma <b>gratuita</b> ofertas de trabajo.</li>
-                          <li>Es muy importante conocer metodoligía de trabajo, lenguajes, stacks, cutlura, etc.</li>
+                          <li>Es muy importante conocer la metodología de trabajo, lenguajes, stacks, cultura, etc.</li>
                           <li>Van a ser destacadas las oportunidades para perfiles <b>trainees/juniors</b></li>
                         </ul>
                       </div>
@@ -62,15 +62,15 @@ export default function Jobs() {
         </div>
 
         <div className="content">
-          <p>En esta industria es <b>muy facil equivocarse</b> y tomar propuestas laborales <b>no</b> que suman a nuestro crecimiento profesional.</p>
+          <p>En esta industria es <b>muy facil equivocarse</b> y tomar propuestas laborales que <b>no</b> suman a nuestro crecimiento profesional.</p>
 
-          <p>Es importante tomar en cuenta lo que un trabajo
+          <p>Es importante tener en cuenta lo que un trabajo
             puede darte para mejorar tus conocimientos, mantenerte actualizado
-            y sobre todas las cosas seguir <b>apasionado por lo que haces</b></p>
+            y sobre todas las cosas seguir <b>apasionado por lo que haces</b>.</p>
           <ul>
             <li>¿Sos un dev?</li>
-            <li>¿Queres cambiar de trabajo?</li>
-            <li>¿Necesitas ayuda para conseguir tu primer empleo?</li>
+            <li>¿Querés cambiar de trabajo?</li>
+            <li>¿Necesitás ayuda para conseguir tu primer empleo?</li>
             <li>¿No sabes que propuesta elegir?</li>
           </ul>
           <br />
